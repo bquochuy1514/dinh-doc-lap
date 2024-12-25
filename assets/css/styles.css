@@ -616,6 +616,95 @@ img {
   text-align: center;
 }
 
+/* ========================== HISTORY ========================== */
+.history__container {
+  row-gap: 2rem;
+}
+
+.history__title {
+  margin-bottom: .5rem;
+}
+
+.history__image {
+  margin-top: 1rem;
+  justify-self: center;
+}
+
+.history__description-img {
+  margin-top: .5rem;
+  justify-self: center;
+  font-size: 14px;
+  width: 100%; 
+  word-wrap: break-word;
+  max-width: 450px; 
+  text-align: center;
+}
+
+.history__img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*=============== LOCATION ===============*/
+.location__container {
+  row-gap: 2rem;
+}
+
+.location__description {
+  margin-bottom: .5rem;
+}
+
+.location__image {
+  margin: 1rem 0;
+  justify-self: center;
+}
+
+.location__img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.location__description-img {
+  margin-top: .5rem;
+  justify-self: center;
+  font-size: 14px;
+  width: 100%; 
+  word-wrap: break-word;
+  max-width: 450px; 
+  text-align: center;
+}
+
+/*=============== MAP ===============*/
+.map__container {
+  row-gap: 2rem;
+}
+
+.map__image {
+  margin-top: 1rem;
+  justify-self: center;
+}
+
+.map__img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.map__description-img {
+  margin-top: .5rem;
+  justify-self: center;
+  font-size: 14px;
+  width: 100%; 
+  word-wrap: break-word;
+  max-width: 450px; 
+  text-align: center;
+}
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: .6rem;
@@ -912,3 +1001,4 @@ img {
     right: 3rem;
   }
 }
+
