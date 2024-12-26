@@ -6,11 +6,11 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --title-color: hsl(0, 0%, 95%);
-  --text-color: hsl(0, 0%, 70%);
+  --title-color: rgb(0, 0, 0);
+  --text-color: rgb(87, 87, 87);
   --text-color-light: hsl(0, 0%, 60%);
-  --body-color: hsl(0, 0%, 0%);
-  --container-color: hsl(0, 0%, 8%);
+  --body-color: rgb(255, 255, 255);
+  --container-color: rgb(226, 226, 226);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -38,7 +38,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1152px) {
   :root {
-    --biggest-font-size: 5.5rem;
+    --biggest-font-size: 4rem;
     --h1-font-size: 2.5rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -116,6 +116,7 @@ img {
   text-align: center;
   font-size: var(--h1-font-size);
   margin-bottom: 1.5rem;
+  text-shadow: 5px 2px 4px rgba(255, 255, 255, 0.2); 
 }
 
 .main {
@@ -213,7 +214,7 @@ img {
   position: absolute;
   width: 1000%;
   height: 100%;
-  background-color: hsla(0, 0%, 0%, .3);
+  background-color: rgba(255, 255, 255, 0.199);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   top: 0;
@@ -250,14 +251,18 @@ img {
   width: 100%;
   height: 850px;
   background: linear-gradient(180deg, 
-              hsla(0, 0%, 0%, 0) 58%, 
-              hsl(0, 0%, 0%) 78%);
+              rgba(255, 255, 255, 0) 58%, 
+              rgb(255, 254, 254) 88%);
 }
 
 .home__container {
   position: relative;
   padding-top: 3rem;
   row-gap: 3rem;
+}
+
+.home__container .button {
+  color: #fff;
 }
 
 .home__data {
@@ -267,17 +272,19 @@ img {
 .home__subtitle {
   font-size: var(--h3-font-size);
   margin-bottom: .5rem;
+  color: #fff;
 }
 
 .home__title {
+  color: #fff;
   font-size: var(--biggest-font-size);
-  margin-bottom: 1rem;
-  text-shadow: 10px 2px 4px rgba(0, 0, 0, 0.5); 
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .home__description {
   margin-bottom: 2rem;
-  color: var(--title-color);
+  color: #fff;
 }
 
 .home__cards {
@@ -301,17 +308,15 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(180deg, 
-              hsla(0, 0%, 0%, 0) 50%, 
-              hsl(0, 0%, 0%) 125%);
 }
 
 .home__card-title {
   position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  font-size: var(--h3-font-size);
+  left: .5rem;
+  bottom: .5rem;
+  font-size: 16px;
   z-index: 1;
+  color: #fff;
 }
 
 .home__card:hover .home__card-img {
@@ -320,7 +325,8 @@ img {
 
 /*=============== BUTTON ===============*/
 .button {
-  background-color: hsla(0, 0%, 100%, .2);
+  cursor: pointer;
+  background-color: rgba(123, 123, 123, 0.199);
   padding: 1.25rem 1.5rem;
   color: var(--title-color);
   display: inline-flex;
@@ -373,8 +379,8 @@ img {
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, 
-              hsla(0, 0%, 0%, 0) 50%, 
-              hsl(0, 0%, 0%) 125%);
+              rgba(255, 255, 255, 0) 88%, 
+              rgb(255, 254, 254) 98%);
 }
 
 .about__image:hover .about__img {
@@ -405,9 +411,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, 
-              hsla(0, 0%, 0%, 0) 50%, 
-              hsl(0, 0%, 0%) 125%);
+
 }
 
 .popular__title {
@@ -430,6 +434,16 @@ img {
 
 .popular__image:hover .popular__img {
   transform: scale(1.2);
+}
+
+.popular__button {
+  margin-top: 2rem;
+  justify-self: center;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 
 /*=============== EXPLORE ===============*/
@@ -456,10 +470,10 @@ img {
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, 
-              rgb(0, 0, 0) 5%, 
-              rgba(0, 0, 0, 0) 40%, 
-              rgba(0, 0, 0, 0) 60%, 
-              rgb(0, 0, 0) 92%);
+              rgb(255, 255, 255) 10%, 
+              rgba(255, 255, 255, 0) 35%, 
+              rgba(255, 255, 255, 0) 75%, 
+              rgb(255, 255, 255) 100%);
 }
 
 .explore__content {
@@ -882,7 +896,7 @@ img {
     grid-template-columns: initial;
     justify-content: initial;
     column-gap: 4rem;
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
   }
 
   .home__shadow {
@@ -907,8 +921,8 @@ img {
   }
 
   .home__card-title {
-    left: 1.5rem;
-    bottom: 1.5rem;
+    left: .5rem;
+    bottom: 1rem;
   }
 
   .button {
