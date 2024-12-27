@@ -341,7 +341,7 @@ img {
 .home__container {
   position: relative;
   padding-top: 3rem;
-  row-gap: 3rem;
+  row-gap: 5rem;
 }
 
 .home__container .button {
@@ -361,7 +361,7 @@ img {
 .home__title {
   color: #fff;
   font-size: var(--biggest-font-size);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
@@ -589,9 +589,7 @@ img {
 .explore__button {
   display: flex;
   margin-top: 1rem;
-  justify-content: center;
   justify-self: center;
-  margin-left: 100px;
   width: fit-content;
 }
 
