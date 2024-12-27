@@ -203,7 +203,7 @@ img {
   font-weight: var(--font-medium);
 }
 
-.nav__item:nth-child(5) {
+.nav__item {
   position: relative;
 }
 
