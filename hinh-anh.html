@@ -26,10 +26,10 @@
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
-                    <a href="#inner" class="nav__link">Inner Palace</a>
+                    <a href="#outer" class="nav__link active-link">Outer Palace</a>
                  </li>
                  <li class="nav__item">
-                  <a href="#outer" class="nav__link">Outer Palace</a>
+                  <a href="#inner" class="nav__link">Inner Palace</a>
                </li>
                </ul>
                <!-- Close button -->
@@ -45,18 +45,65 @@
          </nav>
       </header>
 
-      <!--==================== MAIN ====================-->
       <main class="main">
-         <section class="inner section" id="inner">
-            <h2 class="section__title">
-               Inner The Independence Palace
-            </h2>
+         <!-- Outer Palace section -->
+         <section class="outer section" id="outer">
+            <h2 class="section__title">Outer Palace</h2>
+            <div class="containerr">
+               <div class="slider-wrapper">
+                  <!-- Thêm nút prev/next -->
+                  <i class="fa-solid fa-chevron-left slide-button" id="prev-slide-outer"></i>
+                  <i class="fa-solid fa-chevron-right slide-button" id="next-slide-outer"></i>
+
+                  <div class="image-list" id="image-list-outer">
+                     <img src="assets/img2/outer-palace/IMG_1931.png" alt="img-1" class="image-item">
+                     <img src="assets/img2/outer-palace/IMG_3721.jpeg" alt="img-2" class="image-item">
+                     <img src="assets/img2/outer-palace/IMG_3742.jpeg" alt="img-3" class="image-item">
+                     <img src="assets/img2/outer-palace/IMG_3746.jpeg" alt="img-4" class="image-item">
+                     <img src="assets/img2/outer-palace/IMG_1917.jpeg" alt="img-5" class="image-item">
+                     <img src="assets/img2/outer-palace/IMG_4851.PNG" alt="img-6" class="image-item">
+                     <img src="assets/img2/outer-palace/IMG_4855.PNG" alt="img-7" class="image-item">
+                     <img src="assets/img2/outer-palace/IMG_1903.jpeg" alt="img-8" class="image-item">
+                     <img src="assets/img2/outer-palace/IMG_3757.jpeg" alt="img-9" class="image-item">
+                     <img src="assets/img2/outer-palace/IMG_3781.jpeg" alt="img-10" class="image-item">
+                  </div>
+               </div>
+               <div class="slider-scrollbar" id="slider-scrollbar-outer">
+                  <div class="scrollbar-track">
+                     <div class="scrollbar-thumb"></div>
+                  </div>
+               </div>
+            </div>
          </section>
 
-         <section class="outer section" id="outer">
-            <h2 class="section__title">
-               Outer The Independence Palace
-            </h2>
+         <!-- Inner Palace section -->
+         <section class="inner section" id="inner">
+            <h2 class="section__title">Inner Palace</h2>
+            <div class="containerr">
+               <div class="slider-wrapper">
+                  <!-- Thêm nút prev/next -->
+                  <i class="fa-solid fa-chevron-left slide-button" id="prev-slide-inner"></i>
+                  <i class="fa-solid fa-chevron-right slide-button" id="next-slide-inner"></i>
+
+                  <div class="image-list" id="image-list-inner">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3783.JPG" alt="img-1" class="image-item">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3800.JPG" alt="img-2" class="image-item">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3801.JPG" alt="img-3" class="image-item">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3803.JPG" alt="img-4" class="image-item">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3804.JPG" alt="img-5" class="image-item">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3808.JPG" alt="img-6" class="image-item">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3806.JPG" alt="img-7" class="image-item">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3811.JPG" alt="img-8" class="image-item">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3812.JPG" alt="img-9" class="image-item">
+                     <img src="assets/img2/inner-palace/Copy of IMG_3814.JPG" alt="img-10" class="image-item">
+                  </div>
+               </div>
+               <div class="slider-scrollbar" id="slider-scrollbar-inner">
+                  <div class="scrollbar-track">
+                     <div class="scrollbar-thumb"></div>
+                  </div>
+               </div>
+            </div>
          </section>
 
          <!--==================== JOIN ====================-->
@@ -197,9 +244,9 @@
       </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <script src="assets/js/slider.js"></script>
    </body>
 </html> 
