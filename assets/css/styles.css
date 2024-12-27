@@ -10,7 +10,7 @@
   --text-color: rgb(87, 87, 87);
   --text-color-light: hsl(0, 0%, 60%);
   --body-color: rgb(255, 255, 255);
-  --container-color: rgb(226, 226, 226);
+  --container-color: #f1f4fd;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -412,7 +412,7 @@ img {
 /*=============== BUTTON ===============*/
 .button {
   cursor: pointer;
-  background-color: rgba(123, 123, 123, 0.199);
+  background-color: rgba(241, 244, 253, 0.708);
   padding: 1.25rem 1.5rem;
   color: var(--title-color);
   display: inline-flex;
@@ -850,7 +850,8 @@ img {
 }
 
 /*=============== OUTER ===============*/
-.outer {
+.outer,
+.inner {
   display: flex;
   align-items: center;
   justify-content: center;
