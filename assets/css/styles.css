@@ -1010,7 +1010,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .post-form__name {
@@ -1039,8 +1039,47 @@ img {
 .post-form__media-preview {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  margin: 1rem 0;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.media-preview-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.media-preview-item img,
+.media-preview-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.remove-media-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.remove-media-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .post-form__actions {
@@ -1057,16 +1096,23 @@ img {
   gap: 0.5rem;
   cursor: pointer;
   color: var(--title-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
 }
 
 .post-form__upload-label:hover {
-  color: var(--first-color);
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--title-color);
 }
 
-.post-form__submit {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.post-form__upload-label i {
+  font-size: 1.2rem;
+}
+
+/* Ẩn input file mặc định */
+input[type="file"] {
+  display: none;
 }
 
 /*=============== SCROLL BAR ===============*/

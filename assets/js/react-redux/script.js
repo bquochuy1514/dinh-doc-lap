@@ -66,3 +66,62 @@ const scrollActive = () =>{
 	})
 }
 window.addEventListener('scroll', scrollActive)
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mediaUpload = document.getElementById('media-upload');
+    const mediaPreview = document.querySelector('.post-form__media-preview');
+    const MAX_FILES = 10; // Giới hạn số lượng file tối đa
+
+    mediaUpload.addEventListener('change', function(e) {
+        const files = Array.from(e.target.files);
+        
+        // Kiểm tra số lượng file
+        if (files.length > MAX_FILES) {
+            alert(`You can only upload up to ${MAX_FILES} files at once`);
+            return;
+        }
+
+        // Kiểm tra số lượng file hiện tại + file mới
+        const currentFiles = mediaPreview.querySelectorAll('.media-preview-item').length;
+        if (currentFiles + files.length > MAX_FILES) {
+            alert(`Total number of files cannot exceed ${MAX_FILES}`);
+            return;
+        }
+
+        files.forEach(file => {
+            // Kiểm tra kích thước file (giới hạn 5MB)
+            if (file.size > 5 * 1024 * 1024) {
+                alert(`File ${file.name} is too large. Maximum size is 5MB`);
+                return;
+            }
+
+            const reader = new FileReader();
+            const previewContainer = document.createElement('div');
+            previewContainer.className = 'media-preview-item';
+
+            reader.onload = function(event) {
+                if (file.type.startsWith('image/')) {
+                    const img = document.createElement('img');
+                    img.src = event.target.result;
+                    previewContainer.appendChild(img);
+                } else if (file.type.startsWith('video/')) {
+                    const video = document.createElement('video');
+                    video.src = event.target.result;
+                    video.controls = true;
+                    previewContainer.appendChild(video);
+                }
+
+                const removeBtn = document.createElement('button');
+                removeBtn.innerHTML = '×';
+                removeBtn.className = 'remove-media-btn';
+                removeBtn.onclick = function() {
+                    previewContainer.remove();
+                };
+                previewContainer.appendChild(removeBtn);
+            };
+
+            reader.readAsDataURL(file);
+            mediaPreview.appendChild(previewContainer);
+        });
+    });
+});
