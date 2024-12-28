@@ -24,12 +24,9 @@
             </a>
 
             <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
+               <ul class="nav__list">     
                   <li class="nav__item">
-                     <a href="#outer" class="nav__link active-link">Outer Palace</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#inner" class="nav__link">Inner Palace</a>
+                        <a href="#events" class="nav__link active-link">Guest Book</a>
                   </li>
                   <li class="nav__item"> 
                      <a href="" class="nav__link">More</a>
@@ -41,10 +38,10 @@
                            <a href="dinh-doc-lap.html" class="nav__sub-link">History</a>
                         </li>
                         <li class="nav__sub-item">
-                           <a href="su-kien.html" class="nav__sub-link">Events</a>
+                           <a href="hinh-anh.html" class="nav__sub-link">Images</a>
                         </li>
                         <li class="nav__sub-item">
-                           <a href="luu-but.html" class="nav__sub-link">Guest Book <i class="fa-solid fa-pen"></i></a>
+                           <a href="su-kien.html" class="nav__sub-link">Events</a>
                         </li>
                      </ul>
                   </li>
@@ -62,71 +59,24 @@
          </nav>
       </header>
 
+      <!--==================== MAIN ====================-->
       <main class="main">
-         <!-- Outer Palace section -->
-         <section class="outer section" id="outer">
-            <h2 class="section__title">Outer Palace</h2>
-            <h3 class="section__subtitle">Pictures of the Independence Palace today</h3>
-            <div class="containerr">
-               <div class="slider-wrapper">
-                  <!-- Thêm nút prev/next -->
-                  <i class="fa-solid fa-chevron-left slide-button" id="prev-slide-outer"></i>
-                  <i class="fa-solid fa-chevron-right slide-button" id="next-slide-outer"></i>
+        <section class="guest-book section" id="guest-book">
+            <h2 class="section__title guest-book__title">
+                Guest Book
+            </h2>
 
-                  <div class="image-list" id="image-list-outer">
-                     <img src="assets/img2/outer-palace/IMG_1931.png" alt="img-1" class="image-item">
-                     <img src="assets/img2/outer-palace/IMG_3721.jpeg" alt="img-2" class="image-item">
-                     <img src="assets/img2/outer-palace/IMG_3742.jpeg" alt="img-3" class="image-item">
-                     <img src="assets/img2/outer-palace/IMG_3746.jpeg" alt="img-4" class="image-item">
-                     <img src="assets/img2/outer-palace/IMG_1917.jpeg" alt="img-5" class="image-item">
-                     <img src="assets/img2/outer-palace/IMG_4851.PNG" alt="img-6" class="image-item">
-                     <img src="assets/img2/outer-palace/IMG_4855.PNG" alt="img-7" class="image-item">
-                     <img src="assets/img2/outer-palace/IMG_1903.jpeg" alt="img-8" class="image-item">
-                     <img src="assets/img2/outer-palace/IMG_3757.jpeg" alt="img-9" class="image-item">
-                     <img src="assets/img2/outer-palace/IMG_3781.jpeg" alt="img-10" class="image-item">
-                  </div>
-               </div>
-               <div class="slider-scrollbar" id="slider-scrollbar-outer">
-                  <div class="scrollbar-track">
-                     <div class="scrollbar-thumb"></div>
-                  </div>
-               </div>
+            <p class="guest-book__description">
+                Leave your message in the guest book to commemorate your visit to The Independence Palace.
+            </p>
+
+            <div class="guest-book__container container grid">
+                
             </div>
-         </section>
-
-         <!-- Inner Palace section -->
-         <section class="inner section" id="inner">
-            <h2 class="section__title">Inner Palace</h2>
-            <h3 class="section__subtitle">Pictures of the Independence Palace today</h3>
-            <div class="containerr">
-               <div class="slider-wrapper">
-                  <!-- Thêm nút prev/next -->
-                  <i class="fa-solid fa-chevron-left slide-button" id="prev-slide-inner"></i>
-                  <i class="fa-solid fa-chevron-right slide-button" id="next-slide-inner"></i>
-
-                  <div class="image-list" id="image-list-inner">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3783.JPG" alt="img-1" class="image-item">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3800.JPG" alt="img-2" class="image-item">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3801.JPG" alt="img-3" class="image-item">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3803.JPG" alt="img-4" class="image-item">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3804.JPG" alt="img-5" class="image-item">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3808.JPG" alt="img-6" class="image-item">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3806.JPG" alt="img-7" class="image-item">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3811.JPG" alt="img-8" class="image-item">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3812.JPG" alt="img-9" class="image-item">
-                     <img src="assets/img2/inner-palace/Copy of IMG_3814.JPG" alt="img-10" class="image-item">
-                  </div>
-               </div>
-               <div class="slider-scrollbar" id="slider-scrollbar-inner">
-                  <div class="scrollbar-track">
-                     <div class="scrollbar-thumb"></div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
+        </section>
+         
          <!--==================== JOIN ====================-->
-         <section class="join section">
+        <section class="join section">
             <div class="join__container container grid">
                <div class="join__data">
                   <h2 class="section__title">
@@ -150,7 +100,7 @@
                   <div class="join__shadow"></div>
                </div>
             </div>
-         </section>
+        </section>
       </main>
 
       <!--==================== FOOTER ====================-->
@@ -262,10 +212,6 @@
          <i class="fa-solid fa-arrow-up"></i>
       </a>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/js/scrollreveal.min.js"></script>
-
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/slider.js"></script>
+      <script src=""></script>
    </body>
 </html> 

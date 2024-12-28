@@ -214,7 +214,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.219);
-  min-width: 140px;
+  min-width: 160px;
   padding: 1rem 0;
   margin-top: 1rem;
   border-radius: 0.5rem;
@@ -276,7 +276,8 @@ img {
   transition: width .3s;
 }
 
-.nav__link:hover::after {
+.nav__link:hover::after,
+.nav__item:hover .nav__link::after {
   width: 70%;
 }
 
@@ -412,7 +413,7 @@ img {
 /*=============== BUTTON ===============*/
 .button {
   cursor: pointer;
-  background-color: rgba(241, 244, 253, 0.708);
+  background-color: rgba(241, 244, 253, 0.8);
   padding: 1.25rem 1.5rem;
   color: var(--title-color);
   display: inline-flex;
@@ -976,7 +977,19 @@ img {
   bottom: -10px;
 }
 
+/*=============== GUEST BOOK ===============*/
+.guest-book__container {
+  row-gap: 2rem;
+}
 
+.guest-book__title {
+  margin-bottom: .5rem;
+}
+
+.guest-book__description {
+  margin: 1rem 0;
+  text-align: center;
+}
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
@@ -987,7 +1000,7 @@ img {
 
 ::-webkit-scrollbar-thumb {
   border-radius: .5rem;
-  background-color: hsl(0, 0%, 73%);
+  background-color: rgb(120, 120, 120);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1155,7 +1168,7 @@ img {
     grid-template-columns: initial;
     justify-content: initial;
     column-gap: 4rem;
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
   }
 
   .home__shadow {
