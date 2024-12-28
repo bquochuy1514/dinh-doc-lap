@@ -490,6 +490,8 @@ img {
 
 .popular__img {
   transition: transform .4s;
+  aspect-ratio: 14/9;
+  object-fit: cover;
 }
 
 .popular__shadow {
@@ -1101,13 +1103,94 @@ img {
   transition: all 0.3s ease;
 }
 
-.post-form__upload-label:hover {
+.post-form__submit {
+  border-radius: 8px;
+}
+
+.post-form__upload-label:hover,
+.post-form__submit:hover {
   background-color: rgba(0, 0, 0, 0.05);
   color: var(--title-color);
 }
 
 .post-form__upload-label i {
   font-size: 1.2rem;
+}
+
+/* ================= MEMORY ==================== */
+.memory__description {
+  text-align: center;
+}
+
+.memory__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);/* Tạo các cột tự động dàn đều, mỗi cột có độ rộng tối thiểu 300px */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+  margin-top: 1rem;
+  border-radius: 15px;
+}
+
+.memory__status {
+  padding: 2rem 2.5rem;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.memory__status.pink {
+  background: #ffd1f6;
+}
+
+.memory__status.red {
+  background: #ffb1b1;
+}
+
+.memory__status.green {
+  background: #cbffcd;
+}
+
+.memory__status.blue {
+  background: #d6f6ff
+}
+
+.memory__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.memory__data {
+  display: flex;
+  align-items: center;
+}
+
+.memory__img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: .8rem;
+  border-radius: 50%;
+}
+
+.memory__icon {
+  font-size: 20px;
+}
+
+.memory__comment {
+  margin-top: 1rem;
+}
+
+.memory__comment-image {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Tự động chia ảnh thành các cột với chiều rộng tối thiểu là 150px */
+  gap: 10px; 
+}
+
+.memory__comment-img {
+  width: 100%; /* Đảm bảo ảnh chiếm đầy cột */
+  height: 200px; /* Đặt chiều cao cố định cho ảnh */
+  object-fit: cover; /* Cắt ảnh nếu cần để phù hợp với khung mà không bị méo */
+  border-radius: 8px; /* Làm tròn góc cho ảnh */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ để ảnh nổi bật */
 }
 
 /* Ẩn input file mặc định */
