@@ -26,7 +26,7 @@
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">     
                   <li class="nav__item">
-                        <a href="#events" class="nav__link active-link">Guest Book</a>
+                        <a href="#guest-book" class="nav__link active-link">Guest Book</a>
                   </li>
                   <li class="nav__item"> 
                      <a href="" class="nav__link">More</a>
@@ -70,8 +70,34 @@
                 Leave your message in the guest book to commemorate your visit to The Independence Palace.
             </p>
 
-            <div class="guest-book__container container grid">
-                
+            <div class="guest-book__container container">
+                <div class="post-form">
+                    <div class="post-form__user-info">
+                        <img src="assets/img2/users/huy-bui.jpg" alt="User Avatar" class="post-form__avatar">
+                        <input type="text" placeholder="Your name" class="post-form__name">
+                    </div>
+        
+                    <div class="post-form__content">
+                        <textarea placeholder="Share your thoughts about The Independence Palace..." class="post-form__text"></textarea>
+                        
+                        <div class="post-form__media-preview">
+                            <!-- Ảnh/video sẽ hiển thị ở đây sau khi upload -->
+                        </div>
+        
+                        <div class="post-form__actions">
+                            <div class="post-form__upload">
+                                <label for="media-upload" class="post-form__upload-label">
+                                    <i class="fa-regular fa-image"></i>
+                                    Photo/Video
+                                </label>
+                                <input type="file" id="media-upload" accept="image/*,video/*" multiple hidden>
+                            </div>
+        
+                            <button class="post-form__submit button">
+                                Post <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
             </div>
         </section>
          
@@ -212,6 +238,6 @@
          <i class="fa-solid fa-arrow-up"></i>
       </a>
 
-      <script src=""></script>
+      <script src="./assets/js/react-redux/script.js"></script>
    </body>
 </html> 
