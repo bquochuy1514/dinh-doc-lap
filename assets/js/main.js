@@ -82,3 +82,12 @@ sr.reveal('.about__data, .join__image', {origin: 'right'})
 sr.reveal('.about__image, .join__data', {origin: 'left'})
 sr.reveal('.popular__card', {interval: 200})
 
+// Handle Event Page
+const closeEventBtn = document.querySelector('.modal-events__icon')
+
+if (closeEventBtn) {
+    const modalEvents = document.querySelector('.modal-events')
+    closeEventBtn.addEventListener('click', () => {
+        modalEvents.classList.remove('active')
+    })
+}
