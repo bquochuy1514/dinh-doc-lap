@@ -850,6 +850,27 @@ img {
   text-align: initial;
 }
 
+.modal-events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-events-container {
+  background: url('https://sohanews.sohacdn.com/2020/4/29/photo-1-15881305486421226484751.jpg');
+  height: 500px;
+  width: 800px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
 /*=============== OUTER ===============*/
 .outer,
 .inner {
